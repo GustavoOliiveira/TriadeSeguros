@@ -43,15 +43,15 @@
   border: none;
   font-size: 1rem;
   white-space: nowrap;
-  color: var(--white);
-  background-color: var(--primary-color);
+  color: var(--extra-light  );
+  background-color: #3761d4;
   border-radius: 5rem;
   transition: 0.3s;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: var(--primary-color-dark);
+  background-color: #517cf4;
 }
 
 .logo {
@@ -59,6 +59,36 @@
   font-weight: 800;
   color: var(--text-dark);
 }
+
+.logo {
+  height: auto;
+}
+
+/* Desktop */
+.logo.desktop {
+  width: 13rem;
+  display: block;
+}
+
+/* Mobile */
+.logo.mobile {
+  width: 10rem;
+  display: none;
+}
+
+/* Breakpoint mobile */
+@media (max-width: 768px) {
+  .logo.desktop {
+    display: none;
+  }
+
+  .logo.mobile {
+    display: block;
+  }
+
+
+}
+
 
 img {
   display: flex;
@@ -161,7 +191,7 @@ header::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("assets/header-bg.jpg");
+  background-image: url("assets/Image/ChatGPT\ Image\ 26\ de\ jan.\ de\ 2026\,\ 11_46_23.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -181,18 +211,29 @@ header::before {
   margin-bottom: 5px;
   font-size: 1rem;
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--extra-light);
   text-align: center;
+  text-shadow: 0 2px 6px rgba(10, 10, 10, 0.35);
 }
 
 .header__content h1 {
   margin-bottom: 2rem;
   font-size: 4.5rem;
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--extra-light);
   line-height: 5.5rem;
   text-align: center;
+  text-shadow: 0 2px 6px rgba(10, 10, 10, 0.35);
 }
+
+@media (max-width: 768px) {
+  .header__content h1 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-bottom: 1.2rem;
+  }
+}
+
 
 .header__btns {
   display: flex;
@@ -208,14 +249,14 @@ header::before {
 .header__btns a {
   padding: 9px 13px;
   font-size: 1.5rem;
-  color: var(--primary-color);
-  background-color: var(--white);
+  color: var(--extra-light);
+  background-color: #3761d4;
   border-radius: 100%;
 }
 
 .header__btns a:hover {
   color: var(--white);
-  background-color: var(--primary-color);
+  background-color: #517cf4;
 }
 
 .destination__container :is(.section__header, .section__description) {
@@ -266,7 +307,7 @@ header::before {
 }
 
 .destination__card:hover .destination__rating {
-  background-color: var(--primary-color-dark);
+  background-color: #3761d4;
 }
 
 .journey__grid {
@@ -354,7 +395,7 @@ header::before {
 
 .showcase__content h4 {
   margin-bottom: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   color: var(--text-dark);
 }
@@ -369,11 +410,8 @@ header::before {
   margin-top: 2rem;
   padding: 1.5rem;
   font-weight: 600;
-  color: var(--text-dark);
-  background-image: url("assets/header-bg.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  color: var(--extra-light);
+  background-color: var(--primary-color-dark);
   border-radius: 5px;
 }
 
@@ -761,7 +799,7 @@ footer {
   }
 
   .nav__links a:hover {
-    color: var(--primary-color);
+    color: var(--primary-color-dark);
   }
 
   .nav__links li:last-child {
@@ -804,11 +842,12 @@ footer {
   }
 
   .header__image {
-    grid-column: 4/8;
+    grid-column: 5/8;
     position: relative;
     isolation: isolate;
     height: 100%;
   }
+
 
   .header__image img {
     position: absolute;
@@ -817,6 +856,8 @@ footer {
     height: 100%;
     width: unset;
   }
+
+  
 
   .destination__grid {
     grid-template-columns: repeat(3, 1fr);
