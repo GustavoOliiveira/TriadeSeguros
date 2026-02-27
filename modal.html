@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* OVERLAY */
+.modal-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.55);
+  backdrop-filter:blur(8px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:999;
+}
+
+/* MODAL */
+
+
+.modal{
+  width:900px;
+  max-width:95%;
+    backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:20px;
+  padding:30px;
+  color:#fff;
+  box-shadow:0 20px 60px rgba(0,0,0,.6);
+  position:relative;
+}
+
+/* FECHAR */
+.close-btn{
+  position:absolute;
+  right:20px;
+  top:20px;
+  background:none;
+  border:none;
+  color:#fff;
+  font-size:20px;
+  cursor:pointer;
+}
+
+/* GRID */
+.modal-content{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+.course-img{
+  width:100%;
+  border-radius:12px;
+  margin:15px 0;
+}
+
+.rating span{
+  opacity:.7;
+  margin-left:8px;
+}
+
+.description{
+  font-size:16px;
+  line-height:1.6;
+  opacity:.9;
+}
+
+.info-row{
+  display:flex;
+  gap:20px;
+  margin:20px 0;
+  opacity:.8;
+}
+
+.learn-box{
+  background:rgba(255,255,255,.05);
+  padding:15px;
+  border-radius:12px;
+  margin-bottom:20px;
+}
+
+.check-list,
+.learn-box ul{
+  list-style:none;
+  padding:0;
+}
+
+.check-list li,
+.learn-box li{
+  margin-bottom:8px;
+  opacity:.85;
+}
+
+.benefits{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.benefit{
+  background:rgba(255,255,255,.05);
+  padding:12px;
+  border-radius:10px;
+  font-size:14px;
+}
+
+.cta{
+  margin-top:20px;
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:bold;
+  background:linear-gradient(90deg,#3b82f6,#60a5fa);
+  color:#fff;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+
+  .modal{
+    padding:20px;
+    max-height:90vh;
+    overflow-y:auto;
+  }
+
+  .modal-content{
+    grid-template-columns:1fr;
+  }
+
+  .benefits{
+    grid-template-columns:1fr;
+  }
+
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- OVERLAY -->
+<div class="modal-overlay active">
+
+  <div class="modal">
+
+    <button class="close-btn">✕</button>
+
+    <div class="modal-content">
+
+      <!-- COLUNA ESQUERDA -->
+      <div class="modal-left">
+
+        <h2>Programação para o sucesso</h2>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐ <span>(7851 avaliações)</span>
+        </div>
+
+        <img src="assets/curso-1.png" class="course-img" />
+
+        <h4>Para quem é esse curso:</h4>
+
+        <ul class="check-list">
+          <li>Iniciantes que querem entrar na área de tecnologia</li>
+          <li>Profissionais que desejam se especializar em programação</li>
+          <li>Quem busca oportunidades na área tech</li>
+        </ul>
+
+        <button class="cta">Ver programa completo</button>
+
+      </div>
+
+      <!-- COLUNA DIREITA -->
+      <div class="modal-right">
+
+        <p class="description">
+          Domine a <b>programação</b> e impulsione sua carreira na tecnologia com
+          nossas aulas práticas e projetos reais.
+        </p>
+
+        <div class="info-row">
+          <span>⏱ 50 horas</span>
+          <span>📚 8 módulos</span>
+          <span>🎬 35 aulas</span>
+        </div>
+
+        <div class="learn-box">
+          <h4>O que você vai aprender:</h4>
+
+          <ul>
+            <li>✔ Fundamentos de programação</li>
+            <li>✔ Desenvolvimento web e mobile</li>
+            <li>✔ Banco de dados e APIs</li>
+            <li>✔ Projetos práticos do zero ao avançado</li>
+          </ul>
+        </div>
+
+        <div class="benefits">
+
+          <div class="benefit">
+            🎓 Certificado de conclusão
+          </div>
+
+          <div class="benefit">
+            ▶️ Acesso às vídeo aulas 24/7
+          </div>
+
+          <div class="benefit">
+            🚀 Projetos práticos reais
+          </div>
+
+          <div class="benefit">
+            👥 Comunidade e suporte
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
