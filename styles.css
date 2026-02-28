@@ -1215,25 +1215,183 @@ footer {
    RESPONSIVO
 ================================= */
 
-@media(max-width:768px){
+/* ==============================
+   MOBILE & TABLET EXPERIENCE
+================================= */
+
+@media (max-width: 768px){
+
+  .modal-overlay{
+    align-items:flex-end;
+    padding:0;
+  }
 
   .modal{
-    padding:22px;
-    max-height:90vh;
+    width:100%;
+    height:92vh;
+    max-height:92vh;
+
+    border-radius:22px 22px 0 0;
+
+    padding:20px 18px 28px;
+
     overflow-y:auto;
+    overflow-x:hidden;
+
+    transform:translateY(40px);
   }
+
+  .modal-overlay.active .modal{
+    transform:translateY(0);
+  }
+
+  /* ===== SCROLL SUAVE MOBILE ===== */
+  .modal::-webkit-scrollbar{
+    width:0;
+  }
+
+  /* ==============================
+     LAYOUT STACK (APP STYLE)
+  ================================= */
 
   .modal-content{
     grid-template-columns:1fr;
-    gap:20px;
+    gap:18px;
   }
+
+  .modal-left,
+  .modal-right{
+    width:100%;
+  }
+
+  /* ==============================
+     HEADER MOBILE
+  ================================= */
 
   .modal-title{
     font-size:22px;
+    line-height:1.25;
+    margin-bottom:4px;
   }
 
+  .rating{
+    font-size:13px;
+    margin-bottom:8px;
+  }
+
+  /* ==============================
+     IMAGEM HERO
+  ================================= */
+
+  .modal-img{
+    border-radius:14px;
+    margin:10px 0 14px;
+    height:180px;
+    object-fit:cover;
+  }
+
+  /* ==============================
+     INFO BADGES
+  ================================= */
+
+  .info-row{
+    gap:10px;
+    font-size:13px;
+  }
+
+  /* ==============================
+     DESCRIÇÃO
+  ================================= */
+
+  .modal-desc{
+    font-size:15px;
+    line-height:1.55;
+  }
+
+  /* ==============================
+     BOX APRENDIZADO (🔥 igual mockup)
+  ================================= */
+
+  .learn-box{
+    padding:18px;
+    border-radius:16px;
+
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255,255,255,.06),
+        rgba(255,255,255,.02)
+      );
+
+    border:1px solid rgba(255,255,255,.06);
+  }
+
+  .modal-learn li{
+    padding:8px 0;
+    border-bottom:1px solid rgba(255,255,255,.06);
+  }
+
+  .modal-learn li:last-child{
+    border:none;
+  }
+
+  /* ==============================
+     BENEFÍCIOS GRID APP STYLE
+  ================================= */
+
   .modal-benefits{
-    grid-template-columns:1fr;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+  }
+
+  .benefit{
+    border-radius:14px;
+    padding:14px;
+    font-size:13px;
+
+    background:
+      linear-gradient(
+        145deg,
+        rgba(255,255,255,.06),
+        rgba(255,255,255,.02)
+      );
+
+    border:1px solid rgba(255,255,255,.05);
+  }
+
+  /* ==============================
+     CTA MOBILE (🔥 MUITO IMPORTANTE)
+  ================================= */
+
+  .modal-cta{
+    position:sticky;
+    bottom:0;
+
+    margin-top:22px;
+
+    padding:16px;
+    font-size:16px;
+    border-radius:14px;
+
+    background:
+      linear-gradient(
+        90deg,
+        #3b82f6,
+        #60a5fa
+      );
+
+    box-shadow:
+      0 10px 30px rgba(59,130,246,.45);
+  }
+
+  /* ==============================
+     BOTÃO FECHAR
+  ================================= */
+
+  .close-btn{
+    top:14px;
+    right:14px;
+    font-size:20px;
   }
 
 }

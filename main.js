@@ -105,7 +105,7 @@ empregabilidade:{
     "Inteligência emocional aplicada à carreira",
   ],
   benefits:[
-    "🎓 Certificação profissional completa",
+    "🎓 Certificado premium com registro",
     "🚀 Formação humana e tecnológica integrada",
     "🧠 Desenvolvimento emocional e estratégico",
     "📚 Material didático progressivo por mentoria"
@@ -119,7 +119,7 @@ empregabilidade:{
   hours:"⏱ 115 horas",
   modulos:"📚 5 módulos",
   aulas:"🎬 Mentorias práticas",
-  reviews:"(Formação profissional completa)",
+  reviews:"(14 Avaliações)",
   publico:[
     "Amantes de jogos que querem transformar hobby em carreira",
     "Interessados em programação e design de games",
@@ -131,7 +131,7 @@ empregabilidade:{
     "Criação de personagens e cenários"
   ],
   benefits:[
-    "🎓 Certificação profissional",
+    "🎓 Certificado premium com registro",
     "🎮 Criação e publicação de jogos",
     "🚀 Preparação para o mercado gamer",
     "💻 Material didático e mentorias"
@@ -145,7 +145,7 @@ designer:{
   hours:"⏱ 136 horas",
   modulos:"📚 10 módulos",
   aulas:"🎬 Mentorias práticas",
-  reviews:"(Formação profissional completa)",
+  reviews:"(17 Avaliações)",
   publico:[
     "Empreendedores e profissionais criativos",
     "Interessados em design gráfico e marketing digital",
@@ -157,7 +157,7 @@ designer:{
     "Empreendedorismo e uso de IA"
   ],
   benefits:[
-    "🎓 Certificação profissional",
+    "🎓 Certificado premium com registro",
     "🎨 Domínio de ferramentas de design",
     "🚀 Estratégias de marketing e negócios",
     "💻 Material didático e mentorias"
@@ -171,7 +171,7 @@ ingles:{
   hours:"⏱ 184 horas",
   modulos:"📚 3 módulos",
   aulas:"🎬 Mentorias práticas",
-  reviews:"(Formação profissional completa)",
+  reviews:"(21 Avaliações)",
   publico:[
     "Profissionais que buscam carreira internacional",
     "Estudantes que desejam ampliar empregabilidade",
@@ -183,7 +183,7 @@ ingles:{
     "Inglês aplicado a viagens e atendimento global"
   ],
   benefits:[
-    "🎓 Certificação profissional",
+    "🎓 Certificado premium com registro",
     "🌎 Inglês aplicado ao mercado global",
     "🚀 Comunicação estratégica internacional",
     "💻 Material didático e mentorias"
@@ -196,7 +196,7 @@ programacao:{
   hours:"⏱ 114 horas",
   modulos:"📚 5 módulos",
   aulas:"🎬 Mentorias práticas",
-  reviews:"(Formação profissional completa)",
+  reviews:"(12 Avaliações)",
   publico:[
     "Iniciantes em programação e tecnologia",
     "Profissionais em transição para TI",
@@ -209,7 +209,7 @@ programacao:{
     "Business Intelligence com Power BI"
   ],
   benefits:[
-    "🎓 Certificação profissional",
+    "🎓 Certificado premium com registro",
     "💻 Desenvolvimento de sistemas reais",
     "🚀 Preparação para o mercado tech",
     "📊 Programação e análise de dados"
@@ -222,7 +222,7 @@ trilha:{
   hours:"⏱ 98 horas",
   modulos:"📚 7 módulos",
   aulas:"🎬 Mentorias práticas",
-  reviews:"(Formação profissional completa)",
+  reviews:"(32 Avaliações)",
   publico:[
     "Jovens em busca do primeiro emprego",
     "Profissionais em recolocação",
@@ -234,7 +234,7 @@ trilha:{
     "Pacote Office (Word, Excel e PowerPoint)"
   ],
   benefits:[
-    "🎓 Certificação profissional",
+    "🎓 Certificado premium com registro",
     "🚀 Preparação para o mercado de trabalho",
     "💼 Desenvolvimento de carreira",
     "📊 Domínio de ferramentas corporativas"
